@@ -24,13 +24,13 @@ export default function Header() {
   ]
 
   return (
-    <header className="max-w-5xl h-20 bg-primary m-auto mt-12 flex items-center justify-center rounded-lg">
+    <header className="h-20 bg-primary m-auto mt-12 flex items-center justify-center rounded-lg">
       <nav className="flex items-center justify-between w-full py-5 px-11">
         <h2>fyr(dev)</h2>
         <ul className="flex gap-8">
           {menu.map((item, index) => (
-            <li key={index} className="hover:underline">
-              <a href={item.href}>
+            <li key={index}>
+              <a href={item.href} className="hover:underline-offset-8">
                 {item.name}
               </a>
             </li>
