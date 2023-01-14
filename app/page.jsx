@@ -72,7 +72,7 @@ export default function Home() {
         </section>
         <section id="projects" className="mt-36 mb-36">
           <h2 className="font-medium text-center text-3xl">Projects</h2>
-          <div className="w-3/4 grid grid-cols-2 md:grid-cols-3 m-auto gap-11 mt-16">
+          <div className="grid grid-cols-1 place-items-center md:grid-cols-2 xl:grid-cols-3 m-auto gap-11 mt-16">
             {projects.map((project) => (
               <ProjectCard
                 key={project.name}
