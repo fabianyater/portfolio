@@ -48,9 +48,10 @@ export default function Home() {
               className="border border-gray-500 rounded-full m-auto"
               src={profilePicture}
               alt="Picture of myself"
+              priority
             />
           </div>
-          <h1 className="text-4xl font-semibold w-fit m-auto -mt-5 rounded-lg bg-yellow-400 py-3 px-6">
+          <h1 className="text-4xl font-bold w-fit m-auto -mt-5 rounded-lg bg-yellow-400 py-3 px-6 text-primary">
             Hello, I'm Fabian Yate
           </h1>
           <h2 className="text-4xl font-medium mt-2">
