@@ -24,7 +24,7 @@ export default function Header() {
   ]
 
   return (
-    <header className="h-20 bg-primary m-auto mt-12 flex items-center justify-center rounded-lg">
+    <header className="w-full h-20 bg-primary m-auto flex items-center justify-center">
       <nav className="flex items-center justify-between w-full py-5 px-11">
         <h2>fyr(dev)</h2>
         <ul className="flex gap-8">
