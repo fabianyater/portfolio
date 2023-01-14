@@ -9,7 +9,7 @@ export default function ProjectCard({ title, description, image, links }) {
         <p className="text-sm font-medium">{description}</p>
         <div className="flex gap-2">
           {links.map((item, index) => (
-            <a key={index} href={item.href} target="_blank">
+            <a key={index} href={item.href} target="_blank" rel="noreferrer">
               <Image src={item.icon} alt={item.name} width={20} height={20} />
             </a>
           ))}
