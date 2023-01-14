@@ -29,10 +29,10 @@ export default function Header() {
         <h2>fyr(dev)</h2>
         <ul className="flex gap-8">
           {menu.map((item, index) => (
-            <li>
-              <Link href={item.href} key={index}>
+            <li key={index} className="hover:underline">
+              <a href={item.href}>
                 {item.name}
-              </Link>
+              </a>
             </li>
           ))}
         </ul>
