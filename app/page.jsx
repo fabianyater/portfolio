@@ -14,7 +14,9 @@ import ProjectCard from "../components/project-card";
 
 export default function Home() {
   return (
-    <div className="container m-auto">
+    <>
+    <Header />
+    
       {/* <header className="max-w-5xl h-20 bg-primary m-auto mt-12 flex items-center justify-center rounded-lg">
         <nav className="flex items-center justify-between w-full py-5 px-11">
           <h2>fyr(dev)</h2>
@@ -40,8 +42,7 @@ export default function Home() {
           </div>
         </nav>
       </header> */}
-      <Header />
-      <main className="mt-24 mb-24">
+      <main className="container m-auto mt-24 mb-24">
         <section className="mx-auto text-center mt-36 mb-36" id="home">
           <div className="m-auto relative -z-10">
             <Image
@@ -93,6 +94,6 @@ export default function Home() {
           </Link>
         </section>
       </main>
-    </div>
+</>
   );
 }
