@@ -3,43 +3,16 @@ import Link from "next/link";
 
 import Icon from "../components/icon";
 import profilePicture from "../images/profile.jpg";
-import linkedin from "../images/linkedin.svg";
-import github from "../images/github.svg";
 
-import { menu } from "../utils/menu";
 import { icons } from "../utils/icons";
 import { projects } from "../utils/projects";
 import Header from "../components/header";
 import ProjectCard from "../components/project-card";
+import Form from "../components/form";
 
 export default function Home() {
   return (
     <div className="container m-auto">
-      {/* <header className="max-w-5xl h-20 bg-primary m-auto mt-12 flex items-center justify-center rounded-lg">
-        <nav className="flex items-center justify-between w-full py-5 px-11">
-          <h2>fyr(dev)</h2>
-          <ul className="flex gap-8">
-            {menu.map((item, index) => (
-              <li key={index}>
-                <a
-                  className="transition hover:underline-offset-8"
-                  href={item.href}
-                >
-                  {item.name}
-                </a>
-              </li>
-            ))}
-          </ul>
-          <div className="flex gap-5">
-            <Link href="https://github.com/fabianyater" target="_blank">
-              <Image src={github} alt="github" />
-            </Link>
-            <Link href="https://www.linkedin.com/in/fabianyr/" target="_blank">
-              <Image src={linkedin} alt="linkedin" />
-            </Link>
-          </div>
-        </nav>
-      </header> */}
       <Header />
       <main className="mt-24 mb-24">
         <section className="mx-auto text-center mt-36 mb-36" id="home">
@@ -91,6 +64,14 @@ export default function Home() {
           >
             Ver más
           </Link>
+        </section>
+        <section id="contact" className="mt-36 mb-36">
+          <h2 className="font-medium text-center text-3xl">Contact me</h2>
+          <p className="text-center mt-9 font-light text-2xl">
+            Thanks for visiting my site. If you want to get in contact with me
+            please fill out the contact form.
+          </p>
+          <Form />
         </section>
       </main>
     </div>
