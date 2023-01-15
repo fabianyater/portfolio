@@ -12,9 +12,9 @@ import Form from "../components/form";
 
 export default function Home() {
   return (
-    <div className="container m-auto">
+    <>
       <Header />
-      <main className="mt-24 mb-24">
+      <main className="container m-auto mt-24 mb-24">
         <section className="mx-auto text-center mt-36 mb-36" id="home">
           <div className="m-auto relative -z-10">
             <Image
@@ -74,6 +74,6 @@ export default function Home() {
           <Form />
         </section>
       </main>
-    </div>
+    </>
   );
 }
