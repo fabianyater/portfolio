@@ -2,6 +2,7 @@ import Image from "next/image"
 import Link from "next/link"
 import github from "../images/github.svg"
 import linkedin from "../images/linkedin.svg"
+import hamburgerMenu from '../images/icons/menu.svg'
 
 export default function Header() {
   const menu = [
@@ -26,8 +27,8 @@ export default function Header() {
   return (
     <header className="w-full h-20 bg-primary m-auto flex items-center justify-center">
       <nav className="flex items-center justify-between w-full py-5 px-11">
-        <h2>fyr(dev)</h2>
-        <ul className="flex gap-8">
+        <h2>fyrDEv</h2>
+        <ul className="hidden sm:flex gap-8">
           {menu.map((item, index) => (
             <li key={index}>
               <a href={item.href} className="hover:underline-offset-8">
@@ -43,6 +44,10 @@ export default function Header() {
           <Link href="https://www.linkedin.com/in/fabianyr/" target="_blank">
             <Image src={linkedin} alt="linkedin" />
           </Link>
+          <input type={'checkbox'} id={'menu'} hidden />
+          <label htmlFor={'menu'} className="block sm:hidden cursor-pointer" >
+            <Image src={hamburgerMenu} alt="Hamburger menu icon" />
+          </label>
         </div>
       </nav>
     </header>
